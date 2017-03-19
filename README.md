@@ -4,7 +4,7 @@
 Title : Digital Recogination
 Link: https://hit-scir.gitbooks.io/neural-networks-and-deep-learning-zh_cn/content/chap1/c1s3.html
 
-1.In command line, cd to a proper directory and type "git clone https://github.com/KrisZhang823/machine_learning.git" to clone project to your local directory.
+1.In command line, cd to a proper directory and type "git clone https://github.com/KrisZhang823/MachineLearningFinalProject.git" to clone project to your local directory.
 
 2.You can create new file in this directory, make changes to a file.
 
