@@ -1,7 +1,7 @@
 
 function myFunction()
-{
-	var training_data = JSON.parse("the_data.json");
+{			
+	init();
 	var gray_scale=new Array();
 	var canvas = document.getElementById('canvas'),
     dataUrl = canvas.toDataURL(),
@@ -45,4 +45,25 @@ function myFunction()
 // After you are done styling it, append it to the BODY element
 	
 	
+}
+
+function loadJSON(callback) {   
+
+    var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'the_data2.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ }
+
+function init() {
+ 	loadJSON(function(response) {
+  // Parse JSON string into object
+    var actual_JSON = JSON.parse(response);
+ });
 }
