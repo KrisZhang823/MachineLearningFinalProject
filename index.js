@@ -1,7 +1,7 @@
 var canvas;
 var context;
-var canvasWidth = 480;
-var canvasHeight = 600;
+var canvasWidth = 140;
+var canvasHeight = 140;
 var padding = 25;
 var lineWidth = 8;
 var colorPurple = "#cb3594";
@@ -94,9 +94,11 @@ function addClick(x,y,dragging){
 
 function redraw(){
 	context.clearRect(0,0,context.width,context.height)// Clears the canvas
-	context.strokeStyle = "#df4b26";
+	//context.strokeStyle = "#df4b26";
+	context.fillStyle = "white";
+	context.fillRect(0,0,400,400);
   	context.lineJoin = "round";
-  	context.lineWidth = 5;
+  	context.lineWidth = 10;
 
   	for (var i = 0; i < clickX.length; i++) {
   		context.beginPath();
