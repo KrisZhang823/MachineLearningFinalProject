@@ -97,6 +97,7 @@ function redraw(){
 	//context.strokeStyle = "#df4b26";
 	context.fillStyle = "white";
 	context.fillRect(0,0,400,400);
+    context.strokeRect(0, 0, canvas.width, canvas.height);
   	context.lineJoin = "round";
   	context.lineWidth = 10;
 
@@ -111,5 +112,16 @@ function redraw(){
 	    context.closePath();
 	    context.stroke();
   	};
+}
+
+function clean(){
+	var canvas=document.getElementById('canvas');
+	var ctx=canvas.getContext("2d");
+    context.fillStyle = "white";
+    context.fillRect(0,0,400,400);
+    context.strokeRect(0, 0, canvas.width, canvas.height);
+    clickX=new Array();
+    clickY=new Array();
+    clickDrag=new Array();
 }
 
