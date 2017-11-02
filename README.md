@@ -11,3 +11,7 @@ Link: https://hit-scir.gitbooks.io/neural-networks-and-deep-learning-zh_cn/conte
 3.After that you can type "git pull" ----> "git add filename"(or "git add -A")   ---> "git commit -m "Describe What you did to this project"  ---> "git push".
 
 4.The order of command is very important, please pull before commit.
+
+
+which is the first change
+
