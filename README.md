@@ -15,3 +15,6 @@ Link: https://hit-scir.gitbooks.io/neural-networks-and-deep-learning-zh_cn/conte
 the second change
 
 the third change
+
+the final change
+
