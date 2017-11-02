@@ -1,4 +1,4 @@
-//helloworld
+
 var canvas;
 var context;
 var canvasWidth = 140;
